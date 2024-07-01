@@ -1,0 +1,397 @@
+
+.Container{
+  width: 320px;
+  height: 625px;
+  border: 3px solid black;
+  margin: auto;
+  border-radius: 25px;
+  position: relative;
+  overflow: hidden;
+}
+.Camera{
+  width: 100%;
+  height: 20px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+.Main{
+  width: 100%;
+  height: 605px;
+  background-image: url('https://i.pinimg.com/736x/18/06/02/180602736d3f6a3bdd19f17d19a4b1fb.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-top: 1px solid green;
+}
+.Controls{
+  width: 100%;
+  height: 35px;
+  position: absolute;
+  font-size: 30px;
+  bottom: 0;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  flex-direction: row-reverse;
+}
+
+.back{
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: whitesmoke;
+  font-size: 35px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+}
+.back:hover{
+  border: 2px dashed red;
+  color: red;
+}
+.back:active{
+  color: green;
+  border: 2px dashed green;
+}
+
+.menu{
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: whitesmoke;
+  font-size: 25px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  padding: 5px;
+}
+.menu:hover{
+  border: 2px dashed red;
+  color: red;
+}
+.menu:active{
+  color: green;
+  border-color: green;
+}
+.Time{
+  color: white;
+  font-family: monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.up{
+  width: 75px;
+  height: 90px;
+  font-size: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 200px auto;
+  background: transparent;
+  color: white;
+  border: none;
+  padding: 12px;
+  transition: all .3s ease;
+  cursor:pointer;
+}
+.up:hover{
+  border: 2px solid white;
+  border-radius: 30px;
+}
+
+.OpenDiv{
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSCArq1mmFDP1JPysQzi9wg2qcYGMrxVsHJ1NYcdm5uC9VB-bv9N1lbBXnjB4K8QgtAuw&usqp=CAU');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 525px;
+  padding: 20px;
+  border-radius:12px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 0;
+  display: none;
+}
+.OpenDiv input{
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  margin-top: 50px;
+  padding-left: 12px;
+  font-size: 20px;
+}
+.OpenDiv input:focus{
+  border: none;
+  outline: none;
+}
+
+.OpenDiv .result{
+  margin-top: 100px;
+  width: 100%;
+  height: 50px;
+  border-radius: 12px;
+  color: white;
+  font-size: 25px;
+  letter-spacing: 3px;
+  font-family: monospace;
+  border: 2px solid orange;
+  cursor: pointer;
+  background: linear-gradient(to top left, red, orange);
+}
+.OpenDiv .result:hover{
+  background: linear-gradient(to top right, red, orange);
+}
+.otmena{
+  width: 100%;
+  height: 50px;
+  border-radius: 12px;
+  color: white;
+  font-size: 25px;
+  letter-spacing: 3px;
+  font-family: monospace;
+  border: 2px solid red;
+  background-color: red;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.qulf{
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  top: 5.9%;
+  margin: 0 auto;
+  width: 100%;
+  animation: animate 2s linear infinite;
+}
+
+@keyframes animate {
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.75);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+.hrefs{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.youtube{
+  color: red;
+  font-size: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.youtube:hover{
+  background-color: #e7e7e7;
+}
+.chat{
+  color: rgb(0, 224, 0);
+  font-size: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.chat:hover{
+  background-color: #e7e7e7;
+}
+.instagram{
+  color: rgb(255, 23, 62);
+  font-size: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.instagram:hover{
+  background-color: #e7e7e7;
+}
+.facebook{
+  color: blue;
+  font-size: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.facebook:hover{
+  background-color: #e7e7e7;
+}
+.netlify{
+  color: rgb(0, 239, 243);
+  font-size: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.netlify:hover{
+  background-color: #e7e7e7;
+}
+.git{
+  color: white;
+  font-size: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.git:hover{
+  background-color: #e7e7e7;
+}
+.icon{
+  color: palevioletred;
+  font-size: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.icon:hover{
+  background-color: #e7e7e7;
+}
+.google{
+  color: orange;
+  font-size: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.google:hover{
+  background-color: #e7e7e7;
+}
+.unsplash{
+  color: white;
+  font-size: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.unsplash:hover{
+  background-color: #e7e7e7;
+}
+.gmail{
+  color: red;
+  font-size: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.gmail:hover{
+  background-color: #e7e7e7;
+}
+.boots{
+  color: blueviolet;
+  font-size: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.boots:hover{
+  background-color: #e7e7e7;
+}
+.game{
+  color: orangered;
+  font-size: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.game:hover{
+  background-color: #e7e7e7;
+}
+.font{
+  color: blue;
+  font-size: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.font:hover{
+  background-color: #e7e7e7;
+}
